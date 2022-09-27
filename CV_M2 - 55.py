@@ -22,5 +22,5 @@ for p in range(1, 5):
         if idadem < 20:
             menor_20 += 1
 idadet = idadet/4
-print(f'------------------------------\nIdade média do Grupo: {idadet}\nHomem mais velho: {homem_mais_velho}\nQuantas '
+print(f'------------------------------\nIdade média do Grupo: {idadet}\nHomem mais velho: {homem_mais_velho}, com {condicao} anos\nQuantas '
       f'mulheres com menos de 20 anos: {menor_20}')
