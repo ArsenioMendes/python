@@ -1,6 +1,5 @@
 num = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
 somapar = atribuicao = soma_terceira_coluna = 0
-
 for l in range(0, 3):
     for c in range(0, 3):
         atribuicao = int(input(f'Insira o valor da da coordenada {l,c} = ')) # BLOCO DE ATRIBUIÇÃO DE VALOR ...
