@@ -1,4 +1,9 @@
 def voto(ano):
+    """
+    -> Informe de obrigatoriedade de votação.
+    :param ano: Data de nascimento do individuo.
+    :return: Retorna a resposta (OBRIGATÓRIO, OPCIONAL, NÃO VOTA)
+    """
     from datetime import date
     atual = date.today().year
     idade = atual - ano

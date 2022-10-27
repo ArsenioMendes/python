@@ -1,11 +1,17 @@
-def ficha(nome=0, gols=0):
+def ficha(jogador, gols_marcados=0):
+    """
+    -> Validação de ficha de gols
+    :param jogador: Nome do jogador.
+    :param gols_marcados: Gols marcados pelo jogador.
+    :return: Nome e quantidade de gols do jogador.
+    """
+    print(f'O jogador {jogador}, marcou {gols_marcados} gols.')
 
-    if nome == 0:
-        print(f'O jogador <DESCONHECICO> fez {gols} gol(s)')
-    else:
-        print(f'O jogador {nome} fez {gols} gol(s)')
 
-
-name = str(input('Digite o nome do jogador: '))
-goals = int(input('Digite a quantidade de Gols: '))
-ficha(name, goals)
+n = str(input('Digite o nome do jogador: '))
+g = int(input('Digite a quantidade de Gols: '))
+if n.strip() == '':
+    n = '<DESCONHECIDO>'
+    ficha(jogador=n, gols_marcados=g)
+else:
+    ficha(n, g)

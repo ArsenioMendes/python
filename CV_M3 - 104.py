@@ -1,11 +1,18 @@
-def leiaint(x):
+def leiaint(msg):
+    valor = 0
+    ok = 0
     while True:
-        if x.isnumeric():
-            print(f'Você digitou o número {x}')
-            break
+        n = str(input(msg))
+        if n.isnumeric():
+            valor = int(n)
+            ok = True
         else:
-            x = input(f'ERRO O {x} INFORMADO NÃO É UM NÚMERO, DIGITE UM NÚMERO INTEIRO: ')
+            print('\033[0;31mERRO, DIGITE UM NÚMERO INTEIRO.\033[m ')
+        if ok:
+            break
+    return valor
 
 
-num = input('Digite um numero: ')
-leiaint(num)
+n = leiaint('DIGITE UM NÚMERO: ')
+print(f'Você acabou de digitar o número {n}')
+
